@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/bottomSheet"
+            motion:touchRegionId="@id/bottomSheet" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/fabNearMe"
+                motion:percentX="1.2" />
+            <KeyPosition
+                motion:framePosition="20"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/fabMyLocation"
+                motion:percentX="1.2" />
+            <KeyAttribute
+                android:alpha="0.0"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/fabNearMe" />
+            <KeyAttribute
+                android:alpha="0.0"
+                motion:framePosition="20"
+                motion:motionTarget="@+id/fabMyLocation" />
+            <KeyAttribute
+                android:elevation="8dp"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/bottomSheet" />
+            <KeyAttribute
+                android:elevation="0dp"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/bottomSheet" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/fabNearMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toTopOf="@id/fabMyLocation"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fabMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toTopOf="@id/bottomSheet"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/fabNearMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fabMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>
