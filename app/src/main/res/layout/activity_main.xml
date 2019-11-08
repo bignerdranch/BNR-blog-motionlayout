@@ -15,12 +15,6 @@
         tools:context=".MainActivity" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabNearMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_near_me" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabMyLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,19 +24,16 @@
         android:id="@+id/bottomSheet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_top_background">
+        android:background="@drawable/rounded_top_background"/>
 
-        <TextView
-            android:id="@+id/bottomSheetText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:text="Hello World!"
-            android:textColor="@android:color/black"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/originEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-    </FrameLayout>
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
