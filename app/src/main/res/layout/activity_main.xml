@@ -18,22 +18,59 @@
         android:id="@+id/fabMyLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_my_location" />
+        android:src="@drawable/ic_my_location"
+        android:tint="@android:color/white" />
 
     <FrameLayout
         android:id="@+id/bottomSheet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_top_background"/>
+        android:background="@drawable/rounded_top_background" />
+
+    <FrameLayout
+        android:id="@+id/searchBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_background" />
+
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/originIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location" />
+
+    <ImageView
+        android:id="@+id/destinationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location" />
 
     <EditText
         android:id="@+id/originEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/enter_an_origin"
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/destinationEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/enter_a_destination"
+        android:imeOptions="actionSearch"
+        android:inputType="text"/>
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

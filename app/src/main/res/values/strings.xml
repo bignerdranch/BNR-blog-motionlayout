@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MotionApplication</string>
+    <string name="enter_an_origin">Enter an origin</string>
+    <string name="enter_a_destination">Enter a destination</string>
 </resources>
