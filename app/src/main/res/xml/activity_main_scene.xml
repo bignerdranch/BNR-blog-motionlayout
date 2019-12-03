@@ -78,8 +78,8 @@
 
         <Constraint
             android:id="@+id/searchIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
             motion:layout_constraintEnd_toStartOf="@id/destinationEditText"
             motion:layout_constraintStart_toStartOf="parent"
@@ -147,8 +147,8 @@
 
         <Constraint
             android:id="@+id/searchIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
             motion:layout_constraintEnd_toStartOf="@id/destinationEditText"
             motion:layout_constraintStart_toStartOf="parent"

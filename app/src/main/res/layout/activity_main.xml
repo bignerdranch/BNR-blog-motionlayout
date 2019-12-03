@@ -71,6 +71,6 @@
         android:focusable="true"
         android:hint="@string/enter_a_destination"
         android:imeOptions="actionSearch"
-        android:inputType="text"/>
+        android:inputType="text" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
