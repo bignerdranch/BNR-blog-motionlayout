@@ -72,8 +72,8 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
-            motion:layout_constraintEnd_toEndOf="@id/destinationEditText"
-            motion:layout_constraintStart_toStartOf="@id/destinationEditText"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="@id/destinationEditText" />
 
         <Constraint
@@ -87,8 +87,8 @@
 
         <Constraint
             android:id="@+id/originIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="@id/originEditText"
             motion:layout_constraintEnd_toStartOf="@id/originEditText"
             motion:layout_constraintStart_toStartOf="parent"
@@ -96,8 +96,8 @@
 
         <Constraint
             android:id="@+id/destinationIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
             motion:layout_constraintEnd_toStartOf="@id/destinationEditText"
             motion:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
 
         <Constraint
             android:id="@+id/originEditText"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             motion:layout_constraintBottom_toTopOf="@id/destinationEditText"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -141,15 +141,18 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
-            motion:layout_constraintEnd_toEndOf="@id/destinationEditText"
-            motion:layout_constraintStart_toStartOf="@id/destinationEditText"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="@id/originEditText" />
 
         <Constraint
             android:id="@+id/searchIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            motion:layout_constraintEnd_toStartOf="parent" />
+            motion:layout_constraintBottom_toBottomOf="@id/destinationEditText"
+            motion:layout_constraintEnd_toStartOf="@id/destinationEditText"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/destinationEditText" />
 
         <Constraint
             android:id="@+id/originIcon"
