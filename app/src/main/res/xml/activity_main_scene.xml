@@ -31,6 +31,10 @@
                 motion:framePosition="0"
                 motion:motionTarget="@+id/originEditText" />
             <KeyAttribute
+                android:alpha="0.2"
+                motion:framePosition="75"
+                motion:motionTarget="@+id/originEditText" />
+            <KeyAttribute
                 android:alpha="0.0"
                 motion:framePosition="20"
                 motion:motionTarget="@+id/searchIcon" />
@@ -41,6 +45,10 @@
             <KeyAttribute
                 android:alpha="0.0"
                 motion:framePosition="0"
+                motion:motionTarget="@+id/originIcon" />
+            <KeyAttribute
+                android:alpha="0.2"
+                motion:framePosition="75"
                 motion:motionTarget="@+id/originIcon" />
             <KeyAttribute
                 android:alpha="0.0"
@@ -176,7 +184,6 @@
             android:id="@+id/originEditText"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginTop="8dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toEndOf="@id/originIcon"
             motion:layout_constraintTop_toTopOf="@id/bottomSheet" />
